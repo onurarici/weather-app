@@ -1,4 +1,17 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+
+        images: {
+          remotePatterns: [
+            {
+              protocol: 'https',
+              hostname: 'openweathermap.org',
+            //   port: '',
+            //   pathname: '/account123/**',
+            },
+          ],
+        },
+      
+};
 
 export default nextConfig;
